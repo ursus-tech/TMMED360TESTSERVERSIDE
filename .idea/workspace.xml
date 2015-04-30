@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f2774a6-a527-45c6-ba82-bf585f866c90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/TeleMD360ExpServerSide" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/clients.server.controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/clients.server.model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/clients.server.routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/env/development.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/express.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/mongoose.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/env/production.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TeleMD360ExpServerSide.iws" />
@@ -638,7 +647,7 @@
       <workItem from="1430254146677" duration="588000" />
       <workItem from="1430314084645" duration="2276000" />
       <workItem from="1430338353387" duration="12684000" />
-      <workItem from="1430421809059" duration="2638000" />
+      <workItem from="1430421809059" duration="2828000" />
     </task>
     <task id="LOCAL-00001" summary="Updated to include mongoose and shell model for Clients&#10;">
       <created>1430421933006</created>
@@ -646,11 +655,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430421933006</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated to include mongoose and shell model for Clients&#10;">
+      <created>1430424469215</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1430424469215</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20476000" />
+    <option name="totallyTimeSpent" value="20666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -728,6 +743,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Updated to include mongoose and shell model for Clients&#10;" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated to include mongoose and shell model for Clients&#10;" />
   </component>
