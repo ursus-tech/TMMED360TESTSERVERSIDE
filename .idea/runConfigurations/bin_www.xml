@@ -4,6 +4,11 @@
       <env name="DEBUG" value="TeleMD360ExpServerSide" />
     </envs>
     <browser url="http://localhost:3000/" />
+    <profiling>
+      <option name="gnuplotExecutable" value="" />
+      <option name="tickPackage" value="" />
+      <option name="v8ProfilerPackage" value="" />
+    </profiling>
     <method />
   </configuration>
 </component>
