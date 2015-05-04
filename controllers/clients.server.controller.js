@@ -33,6 +33,12 @@ exports.list = function(req, res, next) {
             return next(err);
         } else {
             // Use the 'response' object to send a JSON response
+        clients.forEach( function (client) {
+            console.log(client.ssn);
+        });
+           // for (var j = 0; j < clients.length; j++){
+           //         clients[j].ssn = "12";
+           //     };
             res.json(clients);
         }
     });

@@ -4,6 +4,10 @@
 // Set the 'NODE_ENV' variable
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
+// Set the 'SERVER_SECRET' variable
+process.env.SERVER_SECRET = process.env.SERVER_SECRET || 'secret_password';
+
+
 // Load the module dependencies
 var mongoose = require('./config/mongoose');
     //express = require('./config/express');
