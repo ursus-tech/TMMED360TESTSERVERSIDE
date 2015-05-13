@@ -64,6 +64,8 @@ app.use('/', routes);
 app.use('/users', users);
 
 require('./routes/clients.server.routes.js') (app);
+require('./routes/genderTypes.server.routes.js') (app);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

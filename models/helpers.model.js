@@ -29,14 +29,36 @@ var decrypt  = function(text){
 }
 
 
+
+
+/*
+var genderTypesDoc = new GenderTypes ({
+    id: 'male',
+    display: "Male"
+});
+genderTypesDoc.save(function(err){
+    console.log(err);
+});
+
+var genderTypesDoc = new GenderTypes ({
+    id: 'female',
+    display: "Female"
+});
+
+genderTypesDoc.save(function(err){
+    console.log(err);
+});
+
+*/
+
 var emailSchema = new Schema({
-    email:    { type: String,  unique: true },
+    email:    { type: String,  unique: false },
     type:     { type: String,  enum: enums.emailTypes },
     verified: { type: Boolean, default: false}
 });
 
 var phoneSchema = new Schema({
-    subscriberNumber:        { type: String,  unique: true },
+    subscriberNumber:        { type: String,  unique: false },
     type:                    { type: String,  enum: enums.phoneTypes },
     mobile:                  { type: Boolean, default: false},
     mobileCarrier:           { type: String }
@@ -44,6 +66,7 @@ var phoneSchema = new Schema({
 
 exports.emailSchema = emailSchema;
 exports.phoneSchema = phoneSchema;
+
 module.exports.encrypt = encrypt;
 module.exports.decrypt = decrypt;
 
