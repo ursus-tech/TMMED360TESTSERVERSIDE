@@ -25,7 +25,11 @@ var Client = require('mongoose').model('Client');
         'phoneNumbers':        [ {'subscriberNumber': '206-111-3333', 'type': 'Work',     'verified': false},
                                  {'subscriberNumber': '206-111-3334', 'type': 'Personal', 'verified': false,
                                   'mobile': true, 'mobileCarrier': 'AT&T'},
-                                 {'subscriberNumber': '206-111-3335', 'type': 'Home',     'verified': false} ]
+                                 {'subscriberNumber': '206-111-3335', 'type': 'Home',     'verified': false} ],
+        'timezone':               'Pacific Standard Time',
+        'IVRPin':                 '9483',
+        'noReadingThreshold':     '36',
+        'timerTimeout':           '128'
     });
 
     client001.save(function(err){
@@ -51,7 +55,11 @@ var client001 = new Client ({
     'phoneNumbers':        [ {'subscriberNumber': '206-321-5333',  'type': 'Work',     'verified': false},
                              {'subscriberNumber': '206-321-5334',  'type': 'Personal', 'verified': false,
                               'mobile': true, 'mobileCarrier': 'AT&T'},
-                              {'subscriberNumber': '206-321-5335', 'type': 'Home',     'verified': false} ]
+                              {'subscriberNumber': '206-321-5335', 'type': 'Home',     'verified': false} ],
+    'timezone':               'Pacific Standard Time',
+    'IVRPin':                 '4567',
+    'noReadingThreshold':     '5',
+    'timerTimeout':           '24'
 });
 
 client001.save(function(err){
@@ -76,7 +84,11 @@ var client001 = new Client ({
     'phoneNumbers':        [ {'subscriberNumber': '206-789-3933', 'type': 'Work',     'verified': false},
                              {'subscriberNumber': '206-789-3934', 'type': 'Personal', 'verified': false,
                               'mobile': true, 'mobileCarrier': 'AT&T'},
-                             {'subscriberNumber': '206-789-3935', 'type': 'Home',     'verified': false} ]
+                             {'subscriberNumber': '206-789-3935', 'type': 'Home',     'verified': false} ],
+    'timezone':               'Pacific Standard Time',
+    'IVRPin':                 '1234',
+    'noReadingThreshold':     '48',
+    'timerTimeout':           '124'
 });
 
 client001.save(function(err){

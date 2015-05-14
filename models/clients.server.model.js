@@ -33,7 +33,16 @@ var ClientSchema = new Schema({
     language:               { type: String, enum: enums.languageTypes },
     gender:                 { type: String, enum: helpers.genderTypes},
     primaryMorbidCondition: { type: String, enum: enums.coMorbidConditionTypes},
-    coMorbidConditions:     [{ type: String, enum: enums.coMorbidConditionTypes}]
+    coMorbidConditions:     [{ type: String, enum: enums.coMorbidConditionTypes}],
+    timezone:               { type: String },
+    IVRPin:                 { type: Number, min: 1000, max: 9999 },
+    noReadingThreshold:     { type: Number },
+    timerTimeout:           { type: Number },
+    image:                  { data: Buffer, contentType: String }  // max size is 100 KB - auto validate?
+
+
+
+
 
     //createdOn:      { type: Date,   default:  Date.now},
     //createdBy:      { type: Schema.Types.ObjectId, ref: 'User'},
