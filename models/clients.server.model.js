@@ -38,7 +38,8 @@ var ClientSchema = new Schema({
     IVRPin:                 { type: Number, min: 1000, max: 9999 },
     noReadingThreshold:     { type: Number },
     timerTimeout:           { type: Number },
-    image:                  { data: Buffer, contentType: String }  // max size is 100 KB - auto validate?
+    image:                  { data: Buffer, contentType: String },  // max size is 100 KB - auto validate?
+    episodes:               [ helpers.episodeSchema ]
 
 
 
