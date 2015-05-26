@@ -25,7 +25,7 @@ var GenderTypesSchema = new Schema({
 var GenderTypesModel = mongoose.model("GenderTypes", GenderTypesSchema);
 var GenderTypes = require('mongoose').model('GenderTypes');
 GenderTypes.create(genderTypeDefaults,function(err){
-    console.log(err);
+    //console.log(err);
 });
 /*************************************************************************************/
 /*     GENDER TYPE CREATION [END]                                                    */

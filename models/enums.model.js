@@ -69,6 +69,11 @@ var coMorbidConditionTypes = [
     'Unspecified'
 ];
 
+var pulsePatternTypes = [
+    'Regular',
+    'Irregular'
+];
+
 
 var phoneEmailAddress  = {
 '3 River Wireless'             :     '@sms.3rivers.net',
@@ -149,3 +154,4 @@ exports.emailTypes = emailTypes;
 exports.phoneTypes = phoneTypes;
 exports.languageTypes = languageTypes;
 exports.coMorbidConditionTypes = coMorbidConditionTypes;
+exports.pulsePatternTypes = pulsePatternTypes;

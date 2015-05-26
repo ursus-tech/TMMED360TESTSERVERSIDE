@@ -34,7 +34,7 @@ exports.list = function(req, res, next) {
         } else {
             // Use the 'response' object to send a JSON response
         clients.forEach( function (client) {
-            console.log(client.ssn);
+            console.log('SSN:' + client.ssn);
         });
            // for (var j = 0; j < clients.length; j++){
            //         clients[j].ssn = "12";

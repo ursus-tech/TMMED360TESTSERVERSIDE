@@ -33,7 +33,7 @@ var Client = require('mongoose').model('Client');
     });
 
     client001.save(function(err){
-        console.log(err);
+        if (err) console.log(err);
     });
 
 var client001 = new Client ({
@@ -63,7 +63,7 @@ var client001 = new Client ({
 });
 
 client001.save(function(err){
-    console.log(err);
+    if (err) console.log(err);
 });
 var client001 = new Client ({
     'firstName':              'Susie',
@@ -92,5 +92,6 @@ var client001 = new Client ({
 });
 
 client001.save(function(err){
-    console.log(err);
+    if (err) console.log(err);
+
 });

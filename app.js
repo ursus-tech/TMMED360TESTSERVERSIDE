@@ -64,6 +64,7 @@ app.use('/', routes);
 app.use('/users', users);
 
 require('./routes/clients.server.routes.js') (app);
+require('./routes/rpm.server.routes.js') (app);
 require('./routes/genderTypes.server.routes.js') (app);
 
 

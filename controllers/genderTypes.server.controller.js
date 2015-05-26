@@ -34,12 +34,11 @@ exports.list = function(req, res, next) {
         } else {
             // Use the 'response' object to send a JSON response
         genderTypess.forEach( function (genderTypes) {
-            console.log(genderTypes.ssn);
         });
            // for (var j = 0; j < genderTypess.length; j++){
            //         genderTypess[j].ssn = "12";
            //     };
-            res.json(genderTypess);
+            res.json(genderTypes);
         }
     });
 };

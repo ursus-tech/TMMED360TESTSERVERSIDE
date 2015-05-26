@@ -16,6 +16,10 @@ module.exports = function() {
     // Load the 'Client' model
    require('../models/clients.server.model.js');
 
+    // Load the 'Rpm' model
+    require('../models/rpm.server.model.js');
+
+
     // Return the Mongoose connection instance
     return db;
 };

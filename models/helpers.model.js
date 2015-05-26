@@ -64,8 +64,66 @@ var phoneSchema = new Schema({
     mobileCarrier:           { type: String }
 });
 
+var episodeSchema = new Schema({
+    episode:                { type: Number },
+    rpm:                  [ { type: Schema.Types.ObjectId, ref: 'Rpm' } ]
+});
+
+var bodyMeasurementsSchema = new Schema({
+    date:                   { type: Date },
+    height:                 { type: Number }, // inches
+    weight:                 { type: Number }  // lbs
+});
+
+var vitalMeasurementsSchema = new Schema({
+    date:                   { type: Date },   //
+    temperature:            { type: Number }, // DegF   (Farenheit)
+    bpSystolic:             { type: Number }, // mmHg
+    bpDiastolic:            { type: Number }, // mmHg
+    meanArterialPressure:   { type: Number }, // mmHg
+    pulseRate:              { type: Number }, // bpm
+    pulsePattern:           { type: String,  enum: enums.pulsePatternTypes }
+});
+
+var copdMeasurementsSchema = new Schema({
+    date:                   { type: Date },
+    respirationRate:        { type: Number }, // br/min
+    pef:                    { type: Number }, // L/min   (PEF)
+    fev1:                   { type: Number }, // L       (FEV1)
+    fev1Pred:               { type: Number }, // %       (FEV1%Pred)
+    o2Sat:                  { type: Number }  // %       (O2Sat)
+});
+
+var diabetesMeasurementsSchema = new Schema({
+    date:                   { type: Date },
+    glyco:                  { type: Number }, // HbA1c (%)
+    glucometer:             { type: Number }  // mg/dl
+});
+
+var chfMeasurementsSchema = new Schema({
+    date:                   { type: Date },
+    ankleEdemaRt:           { type: Number, min:  0, max:   4 }, //
+    ankleEdemaLt:           { type: Number, min:  0, max:   4 }, //
+    pedalEdemRt:            { type: Number, min:  0, max:   4 }, //
+    pedalEdemaLt:           { type: Number, min:  0, max:   4 }, //
+    pretibialEdemRt:        { type: Number, min:  0, max:   4 }, //
+    pretibialEdemaLt:       { type: Number, min:  0, max:   4 }, //
+    dyspneaAssessment:      { type: Number, min:  0, max:   4 }, //
+    vasMethod:              { type: Number, min:  0, max: 100 }, //
+    likertMethod:           { type: Number, min: -3, max:   3 }  //
+});
+
+
+
 exports.emailSchema = emailSchema;
 exports.phoneSchema = phoneSchema;
+exports.episodeSchema = episodeSchema;
+exports.bodyMeasurementsSchema = bodyMeasurementsSchema;
+exports.vitalMeasurementsSchema = vitalMeasurementsSchema;
+exports.copdMeasurementsSchema = copdMeasurementsSchema;
+exports.diabetesMeasurementsSchema = diabetesMeasurementsSchema;
+exports.chfMeasurementsSchema = chfMeasurementsSchema;
+
 
 module.exports.encrypt = encrypt;
 module.exports.decrypt = decrypt;
