@@ -561,15 +561,6 @@ var queryRPM = Rpm.findOne({ 'episode': '1',  'documentDate': { '$gte' : new Dat
         if (err) return handleError(err);
         //console.log("Entire JSON Results");
         if (rpms[0] === undefined || rpms[0] === null) {
-            console.log("Nothing found in query");
-            return;
-        }
-        // printResults
-        //rpmutils.prettyPrint(rpms, {type: 'document', indent: ''});
-
-        // Now we to build an array of results
-        var results = [];
-        for (var result in rpms) {
             var document = JSON.parse(JSON.stringify(rpms[result]));
             for (var daily in document.dailyMeasurements) {
                 ;
@@ -579,6 +570,15 @@ var queryRPM = Rpm.findOne({ 'episode': '1',  'documentDate': { '$gte' : new Dat
                     //console.log('Accepted: ' + dataDay);
                     dayRecord._documentId = document._id;
                     dayRecord._client = document._client;
+ console.log("Nothing found in query");
+ return;
+ }
+ // printResults
+ //rpmutils.prettyPrint(rpms, {type: 'document', indent: ''});
+
+ // Now we to build an array of results
+ var results = [];
+ for (var result in rpms) {
                     dayRecord.episode = document.episode;
                     dayRecord.documentDate = document.documentDate;
                     results.push(dayRecord);
