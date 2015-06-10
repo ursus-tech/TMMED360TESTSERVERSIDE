@@ -463,6 +463,895 @@ rpm002.save(function(err){
    // if (err) console.log(err);
 });
 
+
+
+
+
+
+var rpm001 = new Rpm ({
+    '_id':                    generateObjectId('2015','5','1'),
+    'episode':                '1',
+    // '_client':                Schema.ObjectId('5554d063512cb81025074bac'),
+    '_client':                '555f6615436259f8363643b8',
+    'documentDate':           new Date(2015, 4, 1, 0, 0, 0, 0),
+    'dailyMeasurements':      [
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 1, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 2, 0, 0),
+                    'height': '68.5',
+                    'weight': '231.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 4, 0, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '150',
+                    'bpDiastolic': '105',
+                    'meanArterialPressure': '120',
+                    'pulseRate': '78',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 6, 0, 0),
+                    'respirationRate': '17',
+                    'pef': '350',
+                    'fev1': '100',
+                    'fev1Pred': '80',
+                    'o2Sat': '99'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 8, 0, 0),
+                    'glyco': '5',
+                    'glucometer': '105'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 10, 0, 0),
+                    'ankleEdemaRt': '1',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '4',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '80',
+                    'likertMethod': '1'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 8, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 8, 11, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 2, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 2, 11, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        } // Daily Reading - END
+    ]
+});
+
+var rpm002 = new Rpm ({
+    '_id':                    generateObjectId('2015','5','15'),
+    'episode':                '1',
+    // '_client':                Schema.ObjectId('5554d063512cb81025074bac'),
+    '_client':                '555f6615436259f8363643b8',
+    'documentDate':           new Date(2015, 4, 15, 0, 0, 0, 0),
+    'dailyMeasurements':      [
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 19, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 2, 0, 0),
+                    'height': '68.5',
+                    'weight': '231.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 4, 0, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '150',
+                    'bpDiastolic': '105',
+                    'meanArterialPressure': '120',
+                    'pulseRate': '78',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 6, 0, 0),
+                    'respirationRate': '17',
+                    'pef': '350',
+                    'fev1': '100',
+                    'fev1Pred': '80',
+                    'o2Sat': '99'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 8, 0, 0),
+                    'glyco': '5',
+                    'glucometer': '105'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 10, 0, 0),
+                    'ankleEdemaRt': '1',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '4',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '80',
+                    'likertMethod': '1'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 26, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 26, 11, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 20, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 20, 11, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 29, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 29, 17, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        } // Daily Reading - END
+    ]
+});
+
+
+rpm001.save(function(err){
+    // if (err) console.log(err);
+});
+rpm002.save(function(err){
+    // if (err) console.log(err);
+});
+
+
+
+
+
+
+
+var rpm001 = new Rpm ({
+    '_id':                    generateObjectId('2015','5','1'),
+    'episode':                '1',
+    // '_client':                Schema.ObjectId('5554d063512cb81025074bac'),
+    '_client':                '555f6615436259f8363643b9',
+    'documentDate':           new Date(2015, 4, 1, 0, 0, 0, 0),
+    'dailyMeasurements':      [
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 1, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 2, 0, 0),
+                    'height': '68.5',
+                    'weight': '231.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 4, 0, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '150',
+                    'bpDiastolic': '105',
+                    'meanArterialPressure': '120',
+                    'pulseRate': '78',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 6, 0, 0),
+                    'respirationRate': '17',
+                    'pef': '350',
+                    'fev1': '100',
+                    'fev1Pred': '80',
+                    'o2Sat': '99'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 8, 0, 0),
+                    'glyco': '5',
+                    'glucometer': '105'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 1, 10, 10, 0, 0),
+                    'ankleEdemaRt': '1',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '4',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '80',
+                    'likertMethod': '1'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 8, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 8, 11, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 8, 11, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 2, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 2, 11, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 2, 11, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        } // Daily Reading - END
+    ]
+});
+
+var rpm002 = new Rpm ({
+    '_id':                    generateObjectId('2015','5','15'),
+    'episode':                '1',
+    // '_client':                Schema.ObjectId('5554d063512cb81025074bac'),
+    '_client':                '555f6615436259f8363643b9',
+    'documentDate':           new Date(2015, 4, 15, 0, 0, 0, 0),
+    'dailyMeasurements':      [
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 19, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 2, 0, 0),
+                    'height': '69.5',
+                    'weight': '229.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 4, 0, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '149',
+                    'bpDiastolic': '105',
+                    'meanArterialPressure': '120',
+                    'pulseRate': '78',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 6, 0, 0),
+                    'respirationRate': '17',
+                    'pef': '350',
+                    'fev1': '100',
+                    'fev1Pred': '80',
+                    'o2Sat': '99'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 8, 0, 0),
+                    'glyco': '5',
+                    'glucometer': '105'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 19, 10, 10, 0, 0),
+                    'ankleEdemaRt': '1',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '4',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '80',
+                    'likertMethod': '1'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 26, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 26, 11, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 26, 11, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 20, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 20, 11, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 20, 11, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        }, // Daily Reading - END
+        {  // Daily Reading - START
+            'date': new Date(2015, 4, 29, 0, 0, 0, 0),
+            'bodyMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17, 3, 0, 0),
+                    'height': '58.5',
+                    'weight': '221.6'
+                }
+            ],
+            'vitalMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17, 3, 45, 0),
+                    'temperature': '97.6',
+                    'bpSystolic': '103',
+                    'bpDiastolic': '100',
+                    'meanArterialPressure': '121',
+                    'pulseRate': '87',
+                    'pulsePattern': 'Regular'
+                },
+                {
+                    'date': new Date(2015, 4, 29, 17, 5, 43, 0),
+                    'temperature': '98.6',
+                    'bpSystolic': '170',
+                    'bpDiastolic': '95',
+                    'meanArterialPressure': '130',
+                    'pulseRate': '97',
+                    'pulsePattern': 'Regular'
+                }
+            ],
+            'copdMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17,6, 0, 0),
+                    'respirationRate': '18',
+                    'pef': '352',
+                    'fev1': '102',
+                    'fev1Pred': '82',
+                    'o2Sat': '99.2'
+                },
+            ],
+            'diabetesMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17, 9, 0, 0),
+                    'glyco': '6',
+                    'glucometer': '103'
+                },
+            ],
+            'chfMeasurements': [
+                {
+                    'date': new Date(2015, 4, 29, 17, 12, 0, 0),
+                    'ankleEdemaRt': '2',
+                    'ankleEdemaLt': '2',
+                    'pedalEdemRt': '3',
+                    'pedalEdemaLt': '2',
+                    'pretibialEdemRt': '4',
+                    'pretibialEdemaLt': '3',
+                    'dyspneaAssessment': '2',
+                    'vasMethod': '81',
+                    'likertMethod': '2'
+                }
+            ]
+        } // Daily Reading - END
+    ]
+});
+
+
+rpm001.save(function(err){
+    // if (err) console.log(err);
+});
+rpm002.save(function(err){
+    // if (err) console.log(err);
+});
+
+
+
+
+
 var conditions = { }
     , update =  { $push: { dailyMeasurements: { $each: [ ], $sort: { date: -1 } }} }
     , options = { multi: true };

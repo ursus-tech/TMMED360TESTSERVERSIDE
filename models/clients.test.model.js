@@ -7,6 +7,7 @@
 var Client = require('mongoose').model('Client');
 
     var client001 = new Client ({
+        '_id':                    '555f6615436259f8363643b7',
         'firstName':              'Joseph',
         'middleName':             'Arnold',
         'lastName':               'Smith',
@@ -37,6 +38,7 @@ var Client = require('mongoose').model('Client');
     });
 
 var client001 = new Client ({
+    '_id':                    '555f6615436259f8363643b8',
     'firstName':              'Paul',
     'middleName':             'Jackson',
     'lastName':               'Brown',
@@ -66,6 +68,7 @@ client001.save(function(err){
     if (err) console.log(err);
 });
 var client001 = new Client ({
+    '_id':                    '555f6615436259f8363643b9',
     'firstName':              'Susie',
     'middleName':             'Marie',
     'lastName':               'Arnold',

@@ -20,6 +20,7 @@ var helpers = require('./helpers.model');
 
 
 var ClientSchema = new Schema({
+    _id:                    Schema.ObjectId,
     firstName:              { type: String, required: true},
     middleName:             { type: String, required: false},
     lastName:               { type: String, required: true},
@@ -92,6 +93,6 @@ console.log(temp.schema.path('salutation').enumValues);
 
 
 
-//require('./clients.test.model.js');
+require('./clients.test.model.js');
 
 //mongoose.model('Client',ClientSchema);
