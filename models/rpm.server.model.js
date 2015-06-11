@@ -75,6 +75,6 @@ console.log(temp.schema.path('salutation').enumValues);
 
 
 
-require('./rpm.test.model.js');
+//require('./rpm.test.model.js');
 
 //mongoose.model('Client',ClientSchema);
