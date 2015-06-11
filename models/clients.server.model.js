@@ -93,6 +93,6 @@ console.log(temp.schema.path('salutation').enumValues);
 
 
 
-require('./clients.test.model.js');
+//require('./clients.test.model.js');
 
 //mongoose.model('Client',ClientSchema);
